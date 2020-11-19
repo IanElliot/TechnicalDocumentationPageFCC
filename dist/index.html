@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Technical Documentation Page</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <nav id="navbar">
+    
+    <header id="navheader">
+Intro to Dave Smith's Rev2 Polyphonic Sythesizer
+  </header>
+    
+    <ul>
+      <li class = "nav-link"><a href="#introduction" >Introduction</a></li>
+      <li class = "nav-link"><a href="#A_Brief_History">A Brief History</a></li>
+      <li class = "nav-link"><a href="#introduction"
+class = "nav-link">Oscillators</a></li>
+      <li class = "nav-link"><a href="#Filter" >Filter</a></li>
+      <li class = "nav-link"><a href="#FilterEnvelope">Filter Envelope</a></li>
+         <li class = "nav-link"><a href="#introduction" >Amplifier Envelope</a></li>
+     </ul> 
+  </nav>
+</header>
+
+<main id="main-doc">
+  <section class="main-section" id = "Introduction">
+    <header class="sectionheader" id="introduction">Introduction</header>
+    <p>The Prophet Rev2 is a 8/16-voice polyphonic synthesizer with analog
+oscillators, filters, and amplifiers. The majority of its sound-shaping
+controls are located on its front panel, putting a tremendous amount of
+      power and versatility within easy reach.</p>    
+  </section>
+  
+  <section class="main-section" id = "A_Brief_History"><header class="sectionheader">A Brief History</header><p>Dave Smith is an American engineer and musician and founder of the synthesizer company Sequential. Smith was responsible for the first commercial polyphonic and microprocessor-controlled synthesizer, the Prophet-5, and later the multitimbral synthesizer. He is also referred to as the "Father of MIDI" for his role in the development of MIDI, now a standard interface protocol for electronic instruments and recording/pro audio equipment.</p></section>
+  
+  <section class="main-section" id = "Oscillators"><header class="sectionheader" >Oscillators</header><p>Oscillators provide the raw building blocks of the Prophet Rev2’s sound
+by producing waveforms, each of which has its own inherent sound character based on its harmonic content. The Prophet Rev2 has two oscillators, plus a sub oscillator and a noise generator, per voice.</p><p>
+Oscillator 1 and 2 are capable of generating sawtooth, sawtooth + triangle, triangle, and pulse waves. You can vary the width of any of these
+waveshapes using the shape mod parameter. This provides a great variety
+of different waveshapes and timbres. </p></section>
+  
+  <section class="main-section" id = "Filter"><header class="sectionheader">Filter</header><p>The Filter takes the basic, raw sound of the oscillators and noise generator and subtracts frequencies, changing the harmonic content and character of their sound. This change can be varied over time using the Filter
+Envelope to produce more dynamic, animated timbres.</p><p>The Prophet Rev2’s filter is a classic, resonant low-pass Curtis filter that is
+switchable between 2-pole operation (12 dB per octave) and 4-pole operation
+(24 dB per octave). The 4-pole filter can self-oscillate when resonance is
+set to its maximum.</p></section>
+  
+  
+  <section class="main-section" id = "Filter_Envelope"><header class="sectionheader">Filter Envelope</header><p>The Prophet Rev2 filter has a dedicated, five-stage envelope generator
+(DADSR). The Filter Envelope is used to shape the harmonic characteristics of a synthesized sound by giving you filtering control over its
+attack, decay, sustain, and release stages (plus a delay parameter to delay
+the onset of the envelope). </p><p>This is one of the most important aspects of designing a sound. Without
+an envelope, the filters would be completely static. They would stay open
+or closed by a fixed amount that wouldn’t change over the duration of a
+sound. That’s not very interesting to listen to and it’s not how instruments
+behave in the real world. </p><p>In general, sounds produced by an instrument are brighter at their beginning (the attack stage) and grow mellower as they die out (the decay and
+release stages). In other words, their harmonic content changes over time.
+This is exactly what the filter envelope is designed to emulate.</p></section>
+  
+<section class="main-section" id = "Amplifier_Envelope"><header class="sectionheader">Amplifier Envelope</header><p>After passing through the filters, a synthesized sound goes into an analog
+voltage controlled amplifier or VCA, which controls its overall volume.
+The VCA has a dedicated, five-stage envelope generator (DADSR). </p><p>The Amplifier Envelope is used to shape the volume characteristics of a
+sound over time by giving you control over its attack, decay, sustain, and
+release stages (plus a delay parameter to delay the onset of the envelope).
+Along with the filter envelope, this is one of the most important factors
+in designing a sound. </p><p>Without a volume envelope, the volume of a sound wouldn’t change
+over the duration of a note. It would begin immediately, remain at its full
+volume for the duration of the note, then end immediately when the note
+was released. Again, that’s not very interesting sonically and it’s not typically how instruments behave in the real world. </p><p>To give you a real-world example, the main difference between the
+sound of the wind and the sound of a snare drum is that they have very
+different volume envelopes. Otherwise, they are essentially both white
+noise. Wind has a relatively slow attack, a long sustain, and a long decay
+and release. A snare drum has a sharp attack, no sustain, and very little
+decay or release. But again, they are both fundamentally white noise.</p></section>  
+  
+</main>
+<!-- partial -->
+  
+</body>
+</html>
